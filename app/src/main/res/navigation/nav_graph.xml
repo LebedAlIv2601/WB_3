@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainConstraintFragment">
+
+    <fragment
+        android:id="@+id/mainConstraintFragment"
+        android:name="com.example.wb_3.MainConstraintFragment"
+        android:label="fragment_main_constraint"
+        tools:layout="@layout/fragment_main_constraint" >
+        <action
+            android:id="@+id/action_mainConstraintFragment_to_firstConstraintFragment"
+            app:destination="@id/firstConstraintFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/firstConstraintFragment"
+        android:name="com.example.wb_3.FirstConstraintFragment"
+        android:label="fragment_first_constraint"
+        tools:layout="@layout/fragment_first_constraint" />
+</navigation>

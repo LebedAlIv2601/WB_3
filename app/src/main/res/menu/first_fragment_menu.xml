@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="@string/first_fragment_menu_screen"
+        android:icon="@drawable/ic_baseline_devices_24"
+        android:iconTint="@color/alpha_white"
+        app:showAsAction="always"/>
+
+    <item android:title="@string/first_fragment_menu_list"
+        android:icon="@drawable/ic_baseline_format_list_bulleted_24"
+        android:iconTint="@color/alpha_white"
+        app:showAsAction="always"/>
+</menu>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">WB_3</string>
+
+    <string name="bottom_nav_constraint">Constraint</string>
+    <string name="bottom_nav_no_constraint">No Constraint</string>
+    
+    <string name="first_fragment_menu_list">List</string>
+    <string name="first_fragment_menu_screen">Screen</string>
+    <string name="now_playing">Сейчас играет</string>
+    <string name="my_wave">Поток «Моя волна»</string>
+    <string name="track_name">Angel (feat. Julie Elven)</string>
+    <string name="musician">R. Armando Morabito</string>
+</resources>
