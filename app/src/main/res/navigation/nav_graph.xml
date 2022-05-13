@@ -13,10 +13,18 @@
         <action
             android:id="@+id/action_mainConstraintFragment_to_firstConstraintFragment"
             app:destination="@id/firstConstraintFragment" />
+        <action
+            android:id="@+id/action_mainConstraintFragment_to_firstNoConstraintFragment"
+            app:destination="@id/firstNoConstraintFragment" />
     </fragment>
     <fragment
         android:id="@+id/firstConstraintFragment"
         android:name="com.example.wb_3.FirstConstraintFragment"
         android:label="fragment_first_constraint"
         tools:layout="@layout/fragment_first_constraint" />
+    <fragment
+        android:id="@+id/firstNoConstraintFragment"
+        android:name="com.example.wb_3.FirstNoConstraintFragment"
+        android:label="fragment_first_no_constraint"
+        tools:layout="@layout/fragment_first_no_constraint" />
 </navigation>
