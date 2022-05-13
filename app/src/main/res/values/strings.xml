@@ -12,4 +12,9 @@
     <string name="musician">R. Armando Morabito</string>
     <string name="time_start">0:00</string>
     <string name="time_end">5:27</string>
+
+    <string name="qr_label">QR-code</string>
+    <string name="search_label">Search</string>
+    <string name="more_label">More</string>
+    <string name="user_name">Баобаб :|</string>
 </resources>

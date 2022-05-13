@@ -1,33 +1,27 @@
 package com.example.wb_3
 
-import android.content.Context
 import android.os.Build
 import android.os.Bundle
-import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.view.WindowInsetsController
 import androidx.core.content.res.ResourcesCompat
-import androidx.core.view.WindowInsetsControllerCompat
 
-class FirstConstraintFragment : Fragment() {
-
-
+class SecondConstraintFragment : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
+
         activity?.window?.statusBarColor = ResourcesCompat.getColor(resources,
-            R.color.light_green, null)
+            R.color.light_blue, null)
 
         activity?.window?.navigationBarColor = ResourcesCompat.getColor(resources,
-            R.color.light_green, null)
+            R.color.white, null)
 
-        return inflater.inflate(R.layout.fragment_first_constraint, container, false)
+        return inflater.inflate(R.layout.fragment_second_constraint, container, false)
     }
-
 }
