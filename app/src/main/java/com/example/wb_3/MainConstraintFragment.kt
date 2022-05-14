@@ -57,6 +57,10 @@ class MainConstraintFragment : Fragment() {
             noConstraintScreenTwo.setOnClickListener {
                 navController.navigate(R.id.action_mainConstraintFragment_to_secondNoConstraintFragment)
             }
+
+            constraintScreenThree.setOnClickListener {
+                navController.navigate(R.id.action_mainConstraintFragment_to_thirdConstraintFragment)
+            }
         }
     }
 

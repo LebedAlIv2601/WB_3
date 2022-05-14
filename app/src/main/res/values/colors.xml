@@ -14,8 +14,13 @@
     <color name="light_green">#748C84</color>
     <color name="alpha_white">#99FFFFFF</color>
 
-    <!--Colors for screen 1-->
+    <!--Colors for screen 2-->
     <color name="light_blue">#5B8FBB</color>
     <color name="light_gray">#F0F0F0</color>
     <color name="blue">#568B9B</color>
+
+    <!--Colors for screen 3-->
+    <color name="green">#69B41B</color>
+    <color name="red">#A74147</color>
+    <color name="alpha_gray">#99646464</color>
 </resources>
