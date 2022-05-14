@@ -19,11 +19,15 @@ class MainConstraintFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
 
-        activity?.window?.statusBarColor = ResourcesCompat.getColor(resources,
-            R.color.purple_dark, null)
+        activity?.window?.statusBarColor = ResourcesCompat.getColor(
+            resources,
+            R.color.purple_dark, null
+        )
 
-        activity?.window?.navigationBarColor = ResourcesCompat.getColor(resources,
-            R.color.white, null)
+        activity?.window?.navigationBarColor = ResourcesCompat.getColor(
+            resources,
+            R.color.white, null
+        )
 
         binding = FragmentMainConstraintBinding.inflate(inflater, container, false)
         return binding?.root
@@ -48,6 +52,10 @@ class MainConstraintFragment : Fragment() {
 
             constraintScreenTwo.setOnClickListener {
                 navController.navigate(R.id.action_mainConstraintFragment_to_secondConstraintFragment)
+            }
+
+            noConstraintScreenTwo.setOnClickListener {
+                navController.navigate(R.id.action_mainConstraintFragment_to_secondNoConstraintFragment)
             }
         }
     }

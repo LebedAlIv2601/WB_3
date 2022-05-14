@@ -3,6 +3,10 @@
 
     <string name="bottom_nav_constraint">Constraint</string>
     <string name="bottom_nav_no_constraint">No Constraint</string>
+    <string name="first_layout_name">Макет 1</string>
+    <string name="second_layout_name">Макет 2</string>
+    <string name="third_layout_name">Макет 3</string>
+    <string name="fourth_layout_name">Макет 4</string>
 
     <string name="first_fragment_menu_list">List</string>
     <string name="first_fragment_menu_screen">Screen</string>
@@ -17,4 +21,19 @@
     <string name="search_label">Search</string>
     <string name="more_label">More</string>
     <string name="user_name">Баобаб :|</string>
+    <string name="online_text">online</string>
+    <string name="account_label">Account</string>
+    <string name="phone_number">+7 (926) 555-78-78</string>
+    <string name="phone_number_prompt">Tap to change phone number</string>
+    <string name="user_nickname">\@baobab</string>
+    <string name="user_nickname_prompt">Username</string>
+    <string name="user_bio">Баобаб Баобаб Баобаб Баобаб Баобаб Баобаб Баобаб Баобаб</string>
+    <string name="user_bio_prompt">Bio</string>
+    <string name="settings_label">Settings</string>
+    <string name="notifications_label">Notifications and Sounds</string>
+    <string name="privacy_label">Privacy and Security</string>
+    <string name="data_label">Data and Storage</string>
+    <string name="chat_label">Chat Settings</string>
+    <string name="folders_label">Chat Folders</string>
+    <string name="devices_label">Devices</string>
 </resources>

@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/light_green"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     tools:context=".FirstNoConstraintFragment">
 
     <androidx.appcompat.widget.Toolbar
+        android:id="@+id/no_constraint_first_fragment_toolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         app:menu="@menu/first_fragment_menu"
-        app:navigationIcon="@drawable/ic_baseline_arrow_forward_ios_24" >
+        app:navigationIcon="@drawable/ic_baseline_arrow_forward_ios_24">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -20,21 +21,23 @@
             android:orientation="vertical">
 
             <TextView
+                android:id="@+id/no_constraint_now_playing_text_view"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textAlignment="center"
                 android:paddingStart="24dp"
                 android:text="@string/now_playing"
+                android:textAlignment="center"
                 android:textColor="@color/alpha_white"
                 android:textSize="12sp" />
 
             <TextView
+                android:id="@+id/no_constraint_playlist_text_view"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/my_wave"
-                android:textColor="@color/white"
-                android:textAlignment="center"
                 android:paddingStart="24dp"
+                android:text="@string/my_wave"
+                android:textAlignment="center"
+                android:textColor="@color/white"
                 android:textSize="12sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"
@@ -47,19 +50,20 @@
     </androidx.appcompat.widget.Toolbar>
 
     <ImageView
+        android:id="@+id/no_constraint_track_image_view"
         android:layout_width="270dp"
         android:layout_height="270dp"
-        android:layout_marginTop="24dp"
         android:layout_gravity="center"
+        android:layout_marginTop="24dp"
         android:src="@drawable/angel" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:layout_marginTop="16dp"
         android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="16dp"
         android:clipToPadding="false"
+        android:orientation="vertical"
         android:padding="16dp">
 
         <LinearLayout
@@ -68,19 +72,21 @@
             android:orientation="horizontal">
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:orientation="vertical">
 
                 <TextView
+                    android:id="@+id/no_constraint_track_name_text_view"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/track_name"
                     android:textColor="@color/white"
-                    android:textSize="18sp"/>
+                    android:textSize="18sp" />
 
                 <TextView
+                    android:id="@+id/no_constraint_musician_name_text_view"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/musician"
@@ -95,13 +101,15 @@
                 android:orientation="horizontal">
 
                 <ImageView
+                    android:id="@+id/no_constraint_button_reply_image_view"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="24dp"
                     android:layout_gravity="center"
+                    android:layout_marginEnd="24dp"
                     android:src="@drawable/ic_baseline_reply_24" />
 
                 <ImageView
+                    android:id="@+id/no_constraint_button_more_image_view"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -115,13 +123,13 @@
 
 
         <SeekBar
-            android:id="@+id/seekBar"
+            android:id="@+id/no_constraint_first_fragment_seek_bar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="18dp"
-            android:progress="10"
             android:layout_marginStart="-16dp"
-            android:layout_marginEnd="-16dp" />
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="-16dp"
+            android:progress="10" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -129,57 +137,63 @@
             android:orientation="horizontal">
 
             <TextView
-                android:layout_width="wrap_content"
+                android:id="@+id/no_constraint_current_time_text_view"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:text="@string/time_start"
                 android:textColor="@color/alpha_white"
                 android:textSize="12sp"
-                android:layout_weight="1"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/seekBar" />
+                app:layout_constraintTop_toBottomOf="@+id/no_constraint_first_fragment_seek_bar" />
 
             <TextView
+                android:id="@+id/no_constraint_end_time_text_view"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/time_end"
                 android:textColor="@color/alpha_white"
                 android:textSize="12sp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/seekBar" />
+                app:layout_constraintTop_toBottomOf="@+id/no_constraint_first_fragment_seek_bar" />
 
         </LinearLayout>
 
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="0dp"
             android:layout_weight="1"
             android:orientation="horizontal">
 
 
             <ImageView
+                android:id="@+id/no_constraint_button_no_favourite_image_view"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:src="@drawable/ic_baseline_not_interested_24"/>
+                android:src="@drawable/ic_baseline_not_interested_24" />
 
 
             <ImageView
+                android:id="@+id/no_constraint_button_skip_previous_image_view"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_weight="1"
-                android:src="@drawable/ic_baseline_skip_previous_24"/>
+                android:src="@drawable/ic_baseline_skip_previous_24" />
 
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/no_constraint_button_play_card_view"
                 android:layout_width="65dp"
                 android:layout_height="65dp"
+                android:layout_gravity="center"
                 app:cardBackgroundColor="@color/white"
-                app:cardCornerRadius="32.5dp"
-                android:layout_gravity="center">
+                app:cardCornerRadius="32.5dp">
 
                 <ImageView
+                    android:id="@+id/no_constraint_button_play_image_view"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -189,6 +203,7 @@
 
 
             <ImageView
+                android:id="@+id/no_constraint_button_skip_next_image_view"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -196,6 +211,7 @@
                 android:src="@drawable/ic_baseline_skip_next_24" />
 
             <ImageView
+                android:id="@+id/no_constraint_button_favourite_image_view"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -216,7 +232,7 @@
                 android:layout_weight="1">
 
                 <ImageView
-                    android:id="@+id/loop_image_view"
+                    android:id="@+id/no_constraint_button_loop_image_view"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="8dp"
@@ -224,24 +240,23 @@
 
             </FrameLayout>
 
-                <ImageView
-                    android:id="@+id/hd_image_view"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="8dp"
-                    android:layout_weight="2"
-                    android:src="@drawable/ic_baseline_hd_24" />
+            <ImageView
+                android:id="@+id/no_constraint_button_hd_image_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_weight="2"
+                android:src="@drawable/ic_baseline_hd_24" />
 
 
-                <ImageView
-                    android:id="@+id/timer_image_view"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="8dp"
-                    android:layout_gravity="end"
-                    android:layout_weight="2"
-                    android:src="@drawable/ic_baseline_access_alarm_24"/>
-
+            <ImageView
+                android:id="@+id/no_constraint_button_timer_image_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginBottom="8dp"
+                android:layout_weight="2"
+                android:src="@drawable/ic_baseline_access_alarm_24" />
 
 
             <FrameLayout
@@ -250,12 +265,12 @@
                 android:layout_weight="1">
 
                 <ImageView
-                    android:id="@+id/arrows_image_view"
+                    android:id="@+id/no_constraint_button_mix_tracks_image_view"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="8dp"
                     android:layout_gravity="end"
-                    android:src="@drawable/ic_baseline_call_split_24"/>
+                    android:layout_marginBottom="8dp"
+                    android:src="@drawable/ic_baseline_call_split_24" />
 
             </FrameLayout>
 
@@ -264,8 +279,6 @@
 
 
     </LinearLayout>
-
-
 
 
 </LinearLayout>

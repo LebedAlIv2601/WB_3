@@ -8,7 +8,7 @@
     tools:context=".SecondConstraintFragment">
 
     <com.google.android.material.appbar.CollapsingToolbarLayout
-        android:id="@+id/collapsingToolbarLayout"
+        android:id="@+id/constraint_second_fragment_collapsing_toolbar_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/light_blue"
@@ -19,7 +19,7 @@
             android:layout_height="wrap_content">
 
             <androidx.appcompat.widget.Toolbar
-                android:id="@+id/toolbar"
+                android:id="@+id/constraint_second_fragment_toolbar"
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
                 app:layout_constraintTop_toTopOf="parent"
@@ -28,7 +28,7 @@
 
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/cardView2"
+                android:id="@+id/constraint_avatar_card_view"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 android:layout_marginTop="8dp"
@@ -37,7 +37,7 @@
                 app:cardCornerRadius="30dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/toolbar">
+                app:layout_constraintTop_toBottomOf="@+id/constraint_second_fragment_toolbar">
 
                 <ImageView
                     android:layout_width="wrap_content"
@@ -47,7 +47,7 @@
             </androidx.cardview.widget.CardView>
 
             <TextView
-                android:id="@+id/textView7"
+                android:id="@+id/constraint_user_name_text_view"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="24dp"
@@ -56,18 +56,18 @@
                 android:textColor="@color/white"
                 android:textSize="20sp"
                 android:textStyle="bold"
-                app:layout_constraintStart_toEndOf="@+id/cardView2"
-                app:layout_constraintTop_toTopOf="@+id/cardView2" />
+                app:layout_constraintStart_toEndOf="@+id/constraint_avatar_card_view"
+                app:layout_constraintTop_toTopOf="@+id/constraint_avatar_card_view" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="24dp"
-                android:text="online"
+                android:text="@string/online_text"
                 android:textColor="@color/alpha_white"
                 android:textSize="14sp"
-                app:layout_constraintStart_toEndOf="@+id/cardView2"
-                app:layout_constraintTop_toBottomOf="@+id/textView7" />
+                app:layout_constraintStart_toEndOf="@+id/constraint_avatar_card_view"
+                app:layout_constraintTop_toBottomOf="@+id/constraint_user_name_text_view" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -78,19 +78,19 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/collapsingToolbarLayout">
+        app:layout_constraintTop_toBottomOf="@+id/constraint_second_fragment_collapsing_toolbar_layout">
 
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout"
+        android:id="@+id/constraint_inner_scroll_view_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/collapsingToolbarLayout">
+        app:layout_constraintTop_toBottomOf="@id/constraint_second_fragment_collapsing_toolbar_layout">
 
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/cardView4"
+            android:id="@+id/constraint_account_card_view"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:cardBackgroundColor="@color/white"
@@ -104,10 +104,10 @@
                 android:paddingBottom="8dp">
 
                 <TextView
-                    android:id="@+id/textView8"
+                    android:id="@+id/constraint_account_label_text_view"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Account"
+                    android:text="@string/account_label"
                     android:textColor="@color/blue"
                     android:textSize="16sp"
                     android:textStyle="bold"
@@ -115,63 +115,63 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
-                    android:id="@+id/textView9"
+                    android:id="@+id/constraint_phone_number_text_view"
                     style="@style/telegram_main_text_style"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:text="+7 (926) 555-78-78"
+                    android:text="@string/phone_number"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/textView8" />
+                    app:layout_constraintTop_toBottomOf="@+id/constraint_account_label_text_view" />
 
                 <TextView
-                    android:id="@+id/textView10"
+                    android:id="@+id/constraint_phone_number_prompt_text_view"
                     style="@style/telegram_mini_text_style"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="4dp"
-                    android:text="Tap to change phone number"
+                    android:text="@string/phone_number_prompt"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/textView9" />
+                    app:layout_constraintTop_toBottomOf="@+id/constraint_phone_number_text_view" />
 
                 <com.google.android.material.divider.MaterialDivider
-                    android:id="@+id/divider1"
+                    android:id="@+id/constraint_phone_number_divider"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/textView10" />
+                    app:layout_constraintTop_toBottomOf="@+id/constraint_phone_number_prompt_text_view" />
 
                 <TextView
-                    android:id="@+id/textView11"
+                    android:id="@+id/constraint_user_nickname_text_view"
                     style="@style/telegram_main_text_style"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:text="\@baobab"
+                    android:text="@string/user_nickname"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/divider1" />
+                    app:layout_constraintTop_toBottomOf="@+id/constraint_phone_number_divider" />
 
                 <TextView
-                    android:id="@+id/textView12"
+                    android:id="@+id/constraint_user_nickname_prompt_text_view"
                     style="@style/telegram_mini_text_style"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="4dp"
-                    android:text="Username"
+                    android:text="@string/user_nickname_prompt"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/textView11" />
+                    app:layout_constraintTop_toBottomOf="@+id/constraint_user_nickname_text_view" />
 
                 <com.google.android.material.divider.MaterialDivider
-                    android:id="@+id/divider2"
+                    android:id="@+id/constraint_user_nickname_divider"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/textView12" />
+                    app:layout_constraintTop_toBottomOf="@+id/constraint_user_nickname_prompt_text_view" />
 
                 <TextView
-                    android:id="@+id/textView13"
+                    android:id="@+id/constraint_user_bio_text_view"
                     style="@style/telegram_main_text_style"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -179,20 +179,20 @@
                     android:layout_marginEnd="16dp"
                     android:ellipsize="end"
                     android:maxLines="1"
-                    android:text="Баобаб Баобаб Баобаб Баобаб Баобаб Баобаб Баобаб Баобаб"
+                    android:text="@string/user_bio"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/divider2" />
+                    app:layout_constraintTop_toBottomOf="@+id/constraint_user_nickname_divider" />
 
                 <TextView
-                    android:id="@+id/textView14"
+                    android:id="@+id/constraint_user_bio_prompt_text_view"
                     style="@style/telegram_mini_text_style"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="4dp"
-                    android:text="Bio"
+                    android:text="@string/user_bio_prompt"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/textView13" />
+                    app:layout_constraintTop_toBottomOf="@+id/constraint_user_bio_text_view" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -200,13 +200,13 @@
 
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/cardView5"
+            android:id="@+id/constraint_settings_card_view"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
             app:cardBackgroundColor="@color/white"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/cardView4">
+            app:layout_constraintTop_toBottomOf="@+id/constraint_account_card_view">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
@@ -216,10 +216,10 @@
                 android:paddingBottom="8dp">
 
                 <TextView
-                    android:id="@+id/textView15"
+                    android:id="@+id/constraint_settings_label_text_view"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Settings"
+                    android:text="@string/settings_label"
                     android:textColor="@color/blue"
                     android:textSize="16sp"
                     android:textStyle="bold"
@@ -227,171 +227,171 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <ImageView
-                    android:id="@+id/imageView12"
+                    android:id="@+id/constraint_notifications_image_view"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/ic_baseline_notifications_none_24"
-                    app:layout_constraintBottom_toBottomOf="@+id/textView16"
+                    app:layout_constraintBottom_toBottomOf="@+id/constraint_notifications_label_text_view"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="@+id/textView16" />
+                    app:layout_constraintTop_toTopOf="@+id/constraint_notifications_label_text_view" />
 
                 <TextView
-                    android:id="@+id/textView16"
+                    android:id="@+id/constraint_notifications_label_text_view"
                     style="@style/telegram_main_text_style"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="24dp"
                     android:layout_marginTop="16dp"
-                    android:text="Notifications and Sounds"
-                    app:layout_constraintStart_toEndOf="@+id/imageView12"
-                    app:layout_constraintTop_toBottomOf="@+id/textView15" />
+                    android:text="@string/notifications_label"
+                    app:layout_constraintStart_toEndOf="@+id/constraint_notifications_image_view"
+                    app:layout_constraintTop_toBottomOf="@+id/constraint_settings_label_text_view" />
 
 
                 <com.google.android.material.divider.MaterialDivider
-                    android:id="@+id/divider3"
+                    android:id="@+id/constraint_notifications_divider"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
                     app:layout_constraintRight_toRightOf="parent"
-                    app:layout_constraintStart_toStartOf="@+id/textView16"
-                    app:layout_constraintTop_toBottomOf="@+id/textView16" />
+                    app:layout_constraintStart_toStartOf="@+id/constraint_notifications_label_text_view"
+                    app:layout_constraintTop_toBottomOf="@+id/constraint_notifications_label_text_view" />
 
 
                 <ImageView
-                    android:id="@+id/imageView17"
+                    android:id="@+id/constraint_privacy_image_view"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/ic_baseline_lock_24"
-                    app:layout_constraintBottom_toBottomOf="@+id/textView18"
+                    app:layout_constraintBottom_toBottomOf="@+id/constraint_privacy_label_text_view"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="@+id/textView18" />
+                    app:layout_constraintTop_toTopOf="@+id/constraint_privacy_label_text_view" />
 
                 <TextView
-                    android:id="@+id/textView18"
+                    android:id="@+id/constraint_privacy_label_text_view"
                     style="@style/telegram_main_text_style"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="24dp"
                     android:layout_marginTop="16dp"
-                    android:text="Privacy and Security"
-                    app:layout_constraintStart_toEndOf="@+id/imageView12"
-                    app:layout_constraintTop_toBottomOf="@+id/divider3" />
+                    android:text="@string/privacy_label"
+                    app:layout_constraintStart_toEndOf="@+id/constraint_notifications_image_view"
+                    app:layout_constraintTop_toBottomOf="@+id/constraint_notifications_divider" />
 
 
                 <com.google.android.material.divider.MaterialDivider
-                    android:id="@+id/divider4"
+                    android:id="@+id/constraint_privacy_divider"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
-                    app:layout_constraintStart_toStartOf="@+id/textView18"
-                    app:layout_constraintTop_toBottomOf="@+id/textView18" />
+                    app:layout_constraintStart_toStartOf="@+id/constraint_privacy_label_text_view"
+                    app:layout_constraintTop_toBottomOf="@+id/constraint_privacy_label_text_view" />
 
                 <ImageView
-                    android:id="@+id/imageView19"
+                    android:id="@+id/constraint_data_image_view"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/ic_baseline_data_usage_24"
-                    app:layout_constraintBottom_toBottomOf="@+id/textView20"
+                    app:layout_constraintBottom_toBottomOf="@+id/constraint_data_label_text_view"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="@+id/textView20" />
+                    app:layout_constraintTop_toTopOf="@+id/constraint_data_label_text_view" />
 
                 <TextView
-                    android:id="@+id/textView20"
+                    android:id="@+id/constraint_data_label_text_view"
                     style="@style/telegram_main_text_style"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="24dp"
                     android:layout_marginTop="16dp"
-                    android:text="Data and Storage"
-                    app:layout_constraintStart_toEndOf="@+id/imageView12"
-                    app:layout_constraintTop_toBottomOf="@+id/divider4" />
+                    android:text="@string/data_label"
+                    app:layout_constraintStart_toEndOf="@+id/constraint_notifications_image_view"
+                    app:layout_constraintTop_toBottomOf="@+id/constraint_privacy_divider" />
 
 
                 <com.google.android.material.divider.MaterialDivider
-                    android:id="@+id/divider5"
+                    android:id="@+id/constraint_data_divider"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
-                    app:layout_constraintStart_toStartOf="@+id/textView18"
-                    app:layout_constraintTop_toBottomOf="@+id/textView20" />
+                    app:layout_constraintStart_toStartOf="@+id/constraint_privacy_label_text_view"
+                    app:layout_constraintTop_toBottomOf="@+id/constraint_data_label_text_view" />
 
                 <ImageView
-                    android:id="@+id/imageView21"
+                    android:id="@+id/constraint_chat_image_view"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/ic_baseline_chat_bubble_outline_24"
-                    app:layout_constraintBottom_toBottomOf="@+id/textView22"
+                    app:layout_constraintBottom_toBottomOf="@+id/constraint_chat_label_image_view"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="@+id/textView22" />
+                    app:layout_constraintTop_toTopOf="@+id/constraint_chat_label_image_view" />
 
                 <TextView
-                    android:id="@+id/textView22"
+                    android:id="@+id/constraint_chat_label_image_view"
                     style="@style/telegram_main_text_style"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="24dp"
                     android:layout_marginTop="16dp"
-                    android:text="Chat Settings"
-                    app:layout_constraintStart_toEndOf="@+id/imageView12"
-                    app:layout_constraintTop_toBottomOf="@+id/divider5" />
+                    android:text="@string/chat_label"
+                    app:layout_constraintStart_toEndOf="@+id/constraint_notifications_image_view"
+                    app:layout_constraintTop_toBottomOf="@+id/constraint_data_divider" />
 
 
                 <com.google.android.material.divider.MaterialDivider
-                    android:id="@+id/divider6"
+                    android:id="@+id/constraint_chat_divider"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
-                    app:layout_constraintStart_toStartOf="@+id/textView18"
-                    app:layout_constraintTop_toBottomOf="@+id/textView22" />
+                    app:layout_constraintStart_toStartOf="@+id/constraint_privacy_label_text_view"
+                    app:layout_constraintTop_toBottomOf="@+id/constraint_chat_label_image_view" />
 
                 <ImageView
-                    android:id="@+id/imageView23"
+                    android:id="@+id/constraint_folders_image_view"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/ic_baseline_folder_open_24"
-                    app:layout_constraintBottom_toBottomOf="@+id/textView24"
+                    app:layout_constraintBottom_toBottomOf="@+id/constraint_folders_label_text_view"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="@+id/textView24" />
+                    app:layout_constraintTop_toTopOf="@+id/constraint_folders_label_text_view" />
 
                 <TextView
-                    android:id="@+id/textView24"
+                    android:id="@+id/constraint_folders_label_text_view"
                     style="@style/telegram_main_text_style"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="24dp"
                     android:layout_marginTop="16dp"
-                    android:text="Chat Folders"
-                    app:layout_constraintStart_toEndOf="@+id/imageView12"
-                    app:layout_constraintTop_toBottomOf="@+id/divider6" />
+                    android:text="@string/folders_label"
+                    app:layout_constraintStart_toEndOf="@+id/constraint_notifications_image_view"
+                    app:layout_constraintTop_toBottomOf="@+id/constraint_chat_divider" />
 
 
                 <com.google.android.material.divider.MaterialDivider
-                    android:id="@+id/divider7"
+                    android:id="@+id/constraint_folders_divider"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
-                    app:layout_constraintStart_toStartOf="@+id/textView18"
-                    app:layout_constraintTop_toBottomOf="@+id/textView24" />
+                    app:layout_constraintStart_toStartOf="@+id/constraint_privacy_label_text_view"
+                    app:layout_constraintTop_toBottomOf="@+id/constraint_folders_label_text_view" />
 
                 <ImageView
-                    android:id="@+id/imageView25"
+                    android:id="@+id/constraint_devices_image_view"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/ic_baseline_devices_24_gray"
-                    app:layout_constraintBottom_toBottomOf="@+id/textView26"
+                    app:layout_constraintBottom_toBottomOf="@+id/constraint_devices_label_text_view"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="@+id/textView26" />
+                    app:layout_constraintTop_toTopOf="@+id/constraint_devices_label_text_view" />
 
                 <TextView
-                    android:id="@+id/textView26"
+                    android:id="@+id/constraint_devices_label_text_view"
                     style="@style/telegram_main_text_style"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="24dp"
                     android:layout_marginTop="16dp"
-                    android:text="Devices"
-                    app:layout_constraintStart_toEndOf="@+id/imageView12"
-                    app:layout_constraintTop_toBottomOf="@+id/divider7" />
+                    android:text="@string/devices_label"
+                    app:layout_constraintStart_toEndOf="@+id/constraint_notifications_image_view"
+                    app:layout_constraintTop_toBottomOf="@+id/constraint_folders_divider" />
 
 
             </androidx.constraintlayout.widget.ConstraintLayout>
@@ -404,7 +404,7 @@
     </ScrollView>
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/cardView3"
+        android:id="@+id/constraint_add_photo_card_view"
         android:layout_width="60dp"
         android:layout_height="60dp"
         app:cardElevation="8dp"
@@ -413,9 +413,10 @@
         app:cardCornerRadius="30dp"
         android:layout_marginTop="-30dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/collapsingToolbarLayout">
+        app:layout_constraintTop_toBottomOf="@+id/constraint_second_fragment_collapsing_toolbar_layout">
 
         <ImageView
+            android:id="@+id/constraint_add_photo_image_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"

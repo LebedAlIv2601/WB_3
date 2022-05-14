@@ -7,7 +7,7 @@
     tools:context=".MainConstraintFragment">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/constraint_label_text_view"
         style="@style/header_text_style"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -20,7 +20,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/no_constraint_label_text_view"
         style="@style/header_text_style"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -29,7 +29,7 @@
         app:layout_constraintEnd_toEndOf="@+id/no_constraint_screen_one"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="@+id/no_constraint_screen_one"
-        app:layout_constraintTop_toTopOf="@+id/textView" />
+        app:layout_constraintTop_toTopOf="@+id/constraint_label_text_view" />
 
     <androidx.cardview.widget.CardView
         android:id="@+id/constraint_screen_one"
@@ -40,13 +40,13 @@
         app:layout_constraintEnd_toStartOf="@+id/no_constraint_screen_one"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView">
+        app:layout_constraintTop_toBottomOf="@+id/constraint_label_text_view">
 
         <TextView
             style="@style/button_text_style"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Макет 1" />
+            android:text="@string/first_layout_name" />
 
     </androidx.cardview.widget.CardView>
 
@@ -63,7 +63,7 @@
             style="@style/button_text_style"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Макет 2" />
+            android:text="@string/second_layout_name" />
 
     </androidx.cardview.widget.CardView>
 
@@ -80,7 +80,7 @@
             style="@style/button_text_style"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Макет 3" />
+            android:text="@string/third_layout_name" />
 
     </androidx.cardview.widget.CardView>
 
@@ -97,7 +97,7 @@
             style="@style/button_text_style"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Макет 4" />
+            android:text="@string/fourth_layout_name" />
 
     </androidx.cardview.widget.CardView>
 
@@ -110,13 +110,13 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/constraint_screen_one"
-        app:layout_constraintTop_toBottomOf="@+id/textView">
+        app:layout_constraintTop_toBottomOf="@+id/constraint_label_text_view">
 
         <TextView
             style="@style/button_text_style"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Макет 1" />
+            android:text="@string/first_layout_name" />
 
     </androidx.cardview.widget.CardView>
 
@@ -133,7 +133,7 @@
             style="@style/button_text_style"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Макет 2" />
+            android:text="@string/second_layout_name" />
 
     </androidx.cardview.widget.CardView>
 
@@ -150,7 +150,7 @@
             style="@style/button_text_style"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Макет 3" />
+            android:text="@string/third_layout_name" />
 
     </androidx.cardview.widget.CardView>
 
@@ -167,7 +167,7 @@
             style="@style/button_text_style"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Макет 4" />
+            android:text="@string/fourth_layout_name" />
 
     </androidx.cardview.widget.CardView>
 
