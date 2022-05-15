@@ -31,6 +31,9 @@
         <action
             android:id="@+id/action_mainConstraintFragment_to_fourthConstraintFragment"
             app:destination="@id/fourthConstraintFragment" />
+        <action
+            android:id="@+id/action_mainConstraintFragment_to_fourthNoConstraintFragment"
+            app:destination="@id/fourthNoConstraintFragment" />
     </fragment>
     <fragment
         android:id="@+id/firstConstraintFragment"
@@ -67,4 +70,9 @@
         android:name="com.example.wb_3.FourthConstraintFragment"
         android:label="fragment_fourth_constraint"
         tools:layout="@layout/fragment_fourth_constraint" />
+    <fragment
+        android:id="@+id/fourthNoConstraintFragment"
+        android:name="com.example.wb_3.FourthNoConstraintFragment"
+        android:label="fragment_fourth_no_constraint"
+        tools:layout="@layout/fragment_fourth_no_constraint" />
 </navigation>
