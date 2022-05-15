@@ -12,6 +12,12 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
+
+    </style>
+
+    <style name="edit_text_style">
+        <item name="colorControlNormal">@color/alpha_gray</item>
+        <item name="colorControlActivated">@color/dark_blue</item>
     </style>
 
     <style name="button_text_style">
@@ -28,21 +34,6 @@
     <style name="button_card_view_style">
         <item name="android:backgroundTint">@color/purple_dark</item>
         <item name="cardCornerRadius">@dimen/button_card_view_corner_radius</item>
-    </style>
-
-    <style name="FirstTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
-        <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/light_green</item>
-        <item name="colorPrimaryVariant">@color/light_green</item>
-        <item name="colorOnPrimary">@color/white</item>
-        <!-- Secondary brand color. -->
-        <item name="colorSecondary">@color/light_green</item>
-        <item name="colorSecondaryVariant">@color/light_green</item>
-        <item name="colorOnSecondary">@color/black</item>
-        <!-- Status bar color. -->
-        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
-        <!-- Customize your theme here. -->
-        <item name="android:navigationBarColor">@color/light_green</item>
     </style>
 
     <style name="telegram_main_text_style">

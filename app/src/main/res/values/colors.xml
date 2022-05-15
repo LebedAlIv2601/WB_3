@@ -23,4 +23,7 @@
     <color name="green">#69B41B</color>
     <color name="red">#A74147</color>
     <color name="alpha_gray">#99646464</color>
+
+    <!--Colors for screen 4-->
+    <color name="dark_blue">#177AF1</color>
 </resources>

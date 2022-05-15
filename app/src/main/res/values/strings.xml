@@ -36,5 +36,10 @@
     <string name="chat_label">Chat Settings</string>
     <string name="folders_label">Chat Folders</string>
     <string name="devices_label">Devices</string>
+
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="enter_label">Войти</string>
+    <string name="forgot_password_label">Забыли\nпароль?</string>
+    <string name="login_hint">Телефон или электронный адрес</string>
+    <string name="password_hint">Пароль</string>
 </resources>
